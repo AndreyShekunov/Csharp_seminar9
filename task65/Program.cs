@@ -24,4 +24,12 @@ void PrintMtoN(int m, int n) // метод (рекурсия) вывода чи�
 
 int numberM = ReadNumber("Введите M");
 int numberN = ReadNumber("Введите N");
-PrintMtoN(numberM, numberN);
+
+if(numberM<=numberN)
+{
+    PrintMtoN(numberM, numberN);
+}
+else
+{
+    Console.WriteLine("M должно быть не больше N");
+}
